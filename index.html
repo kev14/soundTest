@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+			  <link media="screen, projection" rel="stylesheet" type="text/css" href="engine/css/engine.css">
+				<link href="fonts/fonts.css" rel="stylesheet" type="text/css">
+				<script type="text/javascript" charset="utf-8" src="phonegap.js"></script>
+			
+    </head>
+    <body>
+    	
+     
+			
+		 <!-- Storybook elements will be injected here -->
+        <div id="pbsStorybookContainer"></div>
+        
+		   <!-- </div>
+	    </div>-->
+    
+        <!-- Load storybook engine js files -->
+       <script src="engine/js/pbs.js"></script>
+       <script src="engine/js/eventDispatcher.js"></script>
+       <script src="engine/js/interaction.js"></script>
+       <script src="engine/js/resourceLoader.js"></script>
+	     <script src="engine/js/book.js"></script>
+	     <script src="engine/js/page.js"></script>
+	     <script src="engine/js/textArea.js"></script>
+	     <script src="engine/js/view.js"></script>
+       <script src="engine/js/sprite.js"></script>
+       <script src="engine/js/cycler.js"></script>
+       <script src="engine/js/drawingPad.js"></script>
+       <script src="engine/js/suggestedBooks.js"></script>
+       <script src="engine/js/audioPlayer.js"></script>
+       <script src="engine/js/sound.js"></script>
+       <script src="engine/js/audible.js"></script>
+        
+      
+	    
+        <!-- Load Implementation js files-->
+	    <script src="config/config-book.js"></script>
+	    <script src="config/config-page-01.js"></script>
+			<script src="config/config-page-02.js"></script>
+	 		<script src="config/config-page-03.js"></script>
+	    <script src="config/config-page-04-and-05.js"></script>
+	    <script src="config/config-page-06.js"></script>
+	    <script src="config/config-page-07.js"></script>
+	    <script src="config/config-page-08.js"></script>
+	    <script src="config/config-page-09.js"></script>
+	    <script src="config/config-page-10.js"></script>
+	    <script src="config/config-page-11.js"></script>
+	    <script src="config/config-page-12.js"></script>
+	    <script src="config/config-page-13-and-14.js"></script>
+	    <script src="config/config-page-15-and-16.js"></script>
+	    <script src="config/config-page-17-and-18.js"></script>
+	    <script src="config/config-page-19-and-20.js"></script>
+	    <script src="config/config-page-21-25.js"></script> 
+			
+		<script>
+			(function (GLOBAL, PBS) {
+			
+				// Create the storybook
+				var book = PBS.KIDS.storybook.book(GLOBAL, PBS, GLOBAL.document.getElementById("pbsStorybookContainer"), PBS.KIDS.storybook.config);	
+				console.log('book');
+				// Load the storybook resources
+				book.load();		
+					console.log('book');
+				
+				
+			
+			} (window, PBS));
+	    </script>
+	
+    </body>
+</html>
